@@ -1,20 +1,25 @@
 //
-//  TableViewController.swift
+//  butterflyFoodplantsTableViewController.swift
 //  butterflyFoodplants
 //
-//  Created by Seng Lam on 2018/5/1.
+//  Created by Seng Lam on 2018/5/31.
 //  Copyright © 2018年 Seng Lam. All rights reserved.
 //
 
 import UIKit
 
-class butterflyFoodplantsTypesTableViewController: UITableViewController {
-
-    var butterflyFoodplantsType = ["十字花科","大風子科","大戟科","山柑科"]
+class butterflyFoodplantsTableViewController: UITableViewController {
+    
+    var butterflyFoodplants:[ButterflyFoodplant] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = false
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,37 +36,26 @@ class butterflyFoodplantsTypesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return butterflyFoodplantsType.count
+        return butterflyFoodplants.count
     }
-    
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! butterflyFoodplantsTableViewCell
-        cell.typeName.text = butterflyFoodplantsType[indexPath.row]
-        cell.typeThumbnailImageView.image = UIImage(named: butterflyFoodplantsType[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cellb", for: indexPath) as! butterflyFoodplantsTableViewCell
+
+        cell.plantsName.text = butterflyFoodplants[indexPath.row].name
+        cell.plantsThumbnailImageView.image = UIImage(named: butterflyFoodplants[indexPath.row].image)
+
         return cell
     }
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "showButterflyFoodplantsType" {
-                if let indexPath = tableView.indexPathForSelectedRow{
-                    let destinationController = segue.destination as! butterflyFoodplantsTableViewController
-                    switch butterflyFoodplantsType[indexPath.row]{
-                    case "十字花科":
-                        destinationController.butterflyFoodplantsName = ["獨行菜","薺","油菜","葶藶","蔊菜"]
-                    case "大風子科":
-                        destinationController.butterflyFoodplantsName = ["羅比梅"]
-                    case "大戟科":
-                        destinationController.butterflyFoodplantsName = ["裏白饅頭果","粗糠柴","細葉饅頭果","紅仔珠","高氏佛饅頭果"]
-                    case "山柑科":
-                        destinationController.butterflyFoodplantsName = ["平伏莖白花菜","毛瓣蝴蝶木"]
-                    default:
-                        break
-                    }
-                    destinationController.navigationItem.title = butterflyFoodplantsType[indexPath.row]
-                }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showButterflyFoodplantDetails" {
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let destinationController = segue.destination as! butterflyPlantsDetailViewController
+                destinationController.butterflyFoodplant = butterflyFoodplants[indexPath.row]
             }
         }
+    }
 
     /*
     // Override to support conditional editing of the table view.

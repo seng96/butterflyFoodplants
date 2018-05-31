@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160E811020BFD28200AD293B /* butterflyFoodplants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E810F20BFD28200AD293B /* butterflyFoodplants.swift */; };
+		160E811820C036DE00AD293B /* butterflyFoodplantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E811720C036DE00AD293B /* butterflyFoodplantsTableViewController.swift */; };
+		160E811C20C03A7800AD293B /* butterflyFoodplantsDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160E811B20C03A7800AD293B /* butterflyFoodplantsDetailHeaderView.swift */; };
 		1645C90E20987FDD00E54F19 /* butterflyFoodplantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C90D20987FDD00E54F19 /* butterflyFoodplantsTableViewCell.swift */; };
 		1645C9122098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C9112098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift */; };
-		1645C91420989C6E00E54F19 /* butterflyFoodplantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C91320989C6E00E54F19 /* butterflyFoodplantsTableViewController.swift */; };
 		1645C9162098C90100E54F19 /* butterflyPlantsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C9152098C90100E54F19 /* butterflyPlantsDetailViewController.swift */; };
+		1649A12A20C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649A12920C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift */; };
 		167D7D3A20985361006E60A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D7D3920985361006E60A9 /* AppDelegate.swift */; };
 		167D7D3F20985361006E60A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167D7D3D20985361006E60A9 /* Main.storyboard */; };
 		167D7D4120985362006E60A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167D7D4020985362006E60A9 /* Assets.xcassets */; };
@@ -18,10 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160E810F20BFD28200AD293B /* butterflyFoodplants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplants.swift; sourceTree = "<group>"; };
+		160E811720C036DE00AD293B /* butterflyFoodplantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantsTableViewController.swift; sourceTree = "<group>"; };
+		160E811B20C03A7800AD293B /* butterflyFoodplantsDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantsDetailHeaderView.swift; sourceTree = "<group>"; };
 		1645C90D20987FDD00E54F19 /* butterflyFoodplantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantsTableViewCell.swift; sourceTree = "<group>"; };
 		1645C9112098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantsTypesTableViewController.swift; sourceTree = "<group>"; };
-		1645C91320989C6E00E54F19 /* butterflyFoodplantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantsTableViewController.swift; sourceTree = "<group>"; };
 		1645C9152098C90100E54F19 /* butterflyPlantsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyPlantsDetailViewController.swift; sourceTree = "<group>"; };
+		1649A12920C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantDetailTextCell.swift; sourceTree = "<group>"; };
 		167D7D3620985361006E60A9 /* butterflyFoodplants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = butterflyFoodplants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167D7D3920985361006E60A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		167D7D3E20985361006E60A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +47,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160E811120BFD2C400AD293B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1645C9112098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift */,
+				160E811720C036DE00AD293B /* butterflyFoodplantsTableViewController.swift */,
+				1645C9152098C90100E54F19 /* butterflyPlantsDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		160E811220BFD51A00AD293B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1645C90D20987FDD00E54F19 /* butterflyFoodplantsTableViewCell.swift */,
+				160E811B20C03A7800AD293B /* butterflyFoodplantsDetailHeaderView.swift */,
+				1649A12920C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		160E811320BFD52C00AD293B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				160E810F20BFD28200AD293B /* butterflyFoodplants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		160E811420C0353C00AD293B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				167D7D3D20985361006E60A9 /* Main.storyboard */,
+				167D7D4220985362006E60A9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		167D7D2D20985361006E60A9 = {
 			isa = PBXGroup;
 			children = (
@@ -61,13 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				167D7D3920985361006E60A9 /* AppDelegate.swift */,
-				1645C9112098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift */,
-				1645C90D20987FDD00E54F19 /* butterflyFoodplantsTableViewCell.swift */,
-				1645C91320989C6E00E54F19 /* butterflyFoodplantsTableViewController.swift */,
-				1645C9152098C90100E54F19 /* butterflyPlantsDetailViewController.swift */,
-				167D7D3D20985361006E60A9 /* Main.storyboard */,
+				160E811220BFD51A00AD293B /* View */,
+				160E811120BFD2C400AD293B /* Controller */,
+				160E811320BFD52C00AD293B /* Model */,
+				160E811420C0353C00AD293B /* Storyboard */,
 				167D7D4020985362006E60A9 /* Assets.xcassets */,
-				167D7D4220985362006E60A9 /* LaunchScreen.storyboard */,
 				167D7D4520985362006E60A9 /* Info.plist */,
 			);
 			path = butterflyFoodplants;
@@ -145,10 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1645C90E20987FDD00E54F19 /* butterflyFoodplantsTableViewCell.swift in Sources */,
+				1649A12A20C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift in Sources */,
+				160E811020BFD28200AD293B /* butterflyFoodplants.swift in Sources */,
 				1645C9162098C90100E54F19 /* butterflyPlantsDetailViewController.swift in Sources */,
 				1645C9122098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift in Sources */,
+				160E811C20C03A7800AD293B /* butterflyFoodplantsDetailHeaderView.swift in Sources */,
 				167D7D3A20985361006E60A9 /* AppDelegate.swift in Sources */,
-				1645C91420989C6E00E54F19 /* butterflyFoodplantsTableViewController.swift in Sources */,
+				160E811820C036DE00AD293B /* butterflyFoodplantsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
