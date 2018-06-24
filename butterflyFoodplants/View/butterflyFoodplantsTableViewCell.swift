@@ -13,13 +13,18 @@ class butterflyFoodplantsTableViewCell: UITableViewCell {
     @IBOutlet var typeName: UILabel!
     @IBOutlet var typeThumbnailImageView: UIImageView! {
         didSet{
-            typeThumbnailImageView.layer.cornerRadius = typeThumbnailImageView.bounds.width / 4
+            typeThumbnailImageView.layer.cornerRadius = typeThumbnailImageView.bounds.width / 2
             typeThumbnailImageView.clipsToBounds = true
         }
     }
     
     @IBOutlet var plantsName: UILabel!
-    @IBOutlet var plantsThumbnailImageView: UIImageView!
+    @IBOutlet var plantsThumbnailImageView: UIImageView!{
+        didSet{
+            plantsThumbnailImageView.layer.cornerRadius = plantsThumbnailImageView.bounds.width / 2
+            plantsThumbnailImageView.clipsToBounds = true
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
