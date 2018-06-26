@@ -1,0 +1,6 @@
+framework module Pods_butterflyFoodplants {
+  umbrella header "Pods-butterflyFoodplants-umbrella.h"
+
+  export *
+  module * { export * }
+}
