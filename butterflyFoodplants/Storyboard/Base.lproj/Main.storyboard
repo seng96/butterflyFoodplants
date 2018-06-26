@@ -230,6 +230,69 @@
                                             <outlet property="descriptionLabel" destination="xhb-AY-rIo" id="OyT-Vt-mYX"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="butterflyDetailSeparatorCell" id="CfW-CV-E0M" customClass="butterflyDetailSeparatorCell" customModule="butterflyFoodplants" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="422" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CfW-CV-E0M" id="d3Y-iy-7yL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2tt-1T-lvU">
+                                                    <rect key="frame" x="16" y="14.666666666666671" width="343" height="26.333333333333329"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subsection Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uj9-5r-o3s">
+                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="20.333333333333332"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wf0-Jo-Jvw" userLabel="Separator">
+                                                            <rect key="frame" x="0.0" y="25.333333333333336" width="343" height="1"/>
+                                                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="TqI-kg-u4o"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2tt-1T-lvU" firstAttribute="leading" secondItem="d3Y-iy-7yL" secondAttribute="leading" constant="16" id="8r5-6v-PHB"/>
+                                                <constraint firstItem="2tt-1T-lvU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d3Y-iy-7yL" secondAttribute="top" constant="11" id="OIz-Cn-bBg"/>
+                                                <constraint firstAttribute="trailing" secondItem="2tt-1T-lvU" secondAttribute="trailing" constant="16" id="WMa-8j-zgZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="2tt-1T-lvU" secondAttribute="bottom" constant="3" id="bV6-Y5-Oaq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="uj9-5r-o3s" id="JYs-Mp-jgA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="butterflyDetailMapCell" rowHeight="215" id="MK9-M6-jyf" customClass="butterflyDetailMapCell" customModule="butterflyFoodplants" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="466" width="375" height="215"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MK9-M6-jyf" id="lf1-rO-64e">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhI-sN-v8H">
+                                                    <rect key="frame" x="0.0" y="10" width="375" height="205"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="205" id="MKF-uP-VEc"/>
+                                                    </constraints>
+                                                </mapView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rhI-sN-v8H" firstAttribute="leading" secondItem="lf1-rO-64e" secondAttribute="leading" id="CSM-Vf-hKh"/>
+                                                <constraint firstItem="rhI-sN-v8H" firstAttribute="top" secondItem="lf1-rO-64e" secondAttribute="top" constant="10" id="j0A-yf-Rt9"/>
+                                                <constraint firstAttribute="trailing" secondItem="rhI-sN-v8H" secondAttribute="trailing" id="pZR-Hh-ycI"/>
+                                                <constraint firstAttribute="bottom" secondItem="rhI-sN-v8H" secondAttribute="bottom" id="zZP-SY-6xM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mapView" destination="rhI-sN-v8H" id="o0Y-ab-2da"/>
+                                            <segue destination="zmP-wQ-yEa" kind="show" identifier="showMap" id="bSk-9C-Dkz"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="q4c-Ug-Kem" id="Kb9-ra-iCz"/>
@@ -248,11 +311,41 @@
                     </view>
                     <connections>
                         <outlet property="headerViewer" destination="OvI-u5-Ti5" id="STJ-q5-1HN"/>
+                        <outlet property="tableView" destination="8Tn-vV-Pjg" id="a59-dI-kEm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYJ-zJ-GIG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4465" y="112"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="oI0-f3-kje">
+            <objects>
+                <viewController id="zmP-wQ-yEa" customClass="mapViewController" customModule="butterflyFoodplants" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ps1-wX-pXw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ddO-er-CzP">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pJN-Ut-znJ" firstAttribute="trailing" secondItem="ddO-er-CzP" secondAttribute="trailing" id="20J-sf-6EX"/>
+                            <constraint firstItem="ddO-er-CzP" firstAttribute="top" secondItem="pJN-Ut-znJ" secondAttribute="top" id="ptf-84-jub"/>
+                            <constraint firstItem="ddO-er-CzP" firstAttribute="leading" secondItem="pJN-Ut-znJ" secondAttribute="leading" id="qIH-bN-f9h"/>
+                            <constraint firstItem="pJN-Ut-znJ" firstAttribute="bottom" secondItem="ddO-er-CzP" secondAttribute="bottom" id="wn5-ia-jpf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pJN-Ut-znJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="ddO-er-CzP" id="3hB-h4-5JT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikC-cT-x3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5367" y="112"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IzT-Tm-t4V">

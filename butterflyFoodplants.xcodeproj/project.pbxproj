@@ -14,9 +14,13 @@
 		1645C9122098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C9112098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift */; };
 		1645C9162098C90100E54F19 /* butterflyPlantsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1645C9152098C90100E54F19 /* butterflyPlantsDetailViewController.swift */; };
 		1649A12A20C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1649A12920C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift */; };
+		166B4F5920E2962C00CB6C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166B4F5820E2962C00CB6C48 /* Assets.xcassets */; };
+		166B4F5B20E2A51000CB6C48 /* butterflyDetailSeparatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B4F5A20E2A51000CB6C48 /* butterflyDetailSeparatorCell.swift */; };
+		166B4F5D20E2A56C00CB6C48 /* butterflyDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B4F5C20E2A56C00CB6C48 /* butterflyDetailMapCell.swift */; };
+		166B4F5F20E2AB1B00CB6C48 /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B4F5E20E2AB1B00CB6C48 /* location.swift */; };
+		166B4F6120E2C17200CB6C48 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166B4F6020E2C17200CB6C48 /* mapViewController.swift */; };
 		167D7D3A20985361006E60A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167D7D3920985361006E60A9 /* AppDelegate.swift */; };
 		167D7D3F20985361006E60A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167D7D3D20985361006E60A9 /* Main.storyboard */; };
-		167D7D4120985362006E60A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167D7D4020985362006E60A9 /* Assets.xcassets */; };
 		167D7D4420985362006E60A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167D7D4220985362006E60A9 /* LaunchScreen.storyboard */; };
 		16F50ACE20C14342005356D9 /* RobotoMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16F50AC320C14341005356D9 /* RobotoMono-Medium.ttf */; };
 		16F50ACF20C14342005356D9 /* RobotoMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16F50AC420C14341005356D9 /* RobotoMono-Regular.ttf */; };
@@ -32,9 +36,11 @@
 		16F50ADD20C1453A005356D9 /* setofont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16F50ADA20C14539005356D9 /* setofont.ttf */; };
 		16F50ADE20C1453A005356D9 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16F50ADB20C14539005356D9 /* readme.txt */; };
 		16F50ADF20C1453A005356D9 /* setofont-ex.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16F50ADC20C14539005356D9 /* setofont-ex.ttf */; };
+		B95E2138615993CF2D6E7DBF /* Pods_butterflyFoodplants.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00959DF082050CB6BC600C6A /* Pods_butterflyFoodplants.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00959DF082050CB6BC600C6A /* Pods_butterflyFoodplants.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_butterflyFoodplants.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		160E810F20BFD28200AD293B /* butterflyFoodplants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplants.swift; sourceTree = "<group>"; };
 		160E811720C036DE00AD293B /* butterflyFoodplantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantsTableViewController.swift; sourceTree = "<group>"; };
 		160E811B20C03A7800AD293B /* butterflyFoodplantsDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantsDetailHeaderView.swift; sourceTree = "<group>"; };
@@ -42,10 +48,14 @@
 		1645C9112098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantsTypesTableViewController.swift; sourceTree = "<group>"; };
 		1645C9152098C90100E54F19 /* butterflyPlantsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyPlantsDetailViewController.swift; sourceTree = "<group>"; };
 		1649A12920C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyFoodplantDetailTextCell.swift; sourceTree = "<group>"; };
+		166B4F5820E2962C00CB6C48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		166B4F5A20E2A51000CB6C48 /* butterflyDetailSeparatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyDetailSeparatorCell.swift; sourceTree = "<group>"; };
+		166B4F5C20E2A56C00CB6C48 /* butterflyDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = butterflyDetailMapCell.swift; sourceTree = "<group>"; };
+		166B4F5E20E2AB1B00CB6C48 /* location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
+		166B4F6020E2C17200CB6C48 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		167D7D3620985361006E60A9 /* butterflyFoodplants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = butterflyFoodplants.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167D7D3920985361006E60A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		167D7D3E20985361006E60A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		167D7D4020985362006E60A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		167D7D4320985362006E60A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		167D7D4520985362006E60A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16F50AC320C14341005356D9 /* RobotoMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoMono-Medium.ttf"; sourceTree = "<group>"; };
@@ -62,6 +72,8 @@
 		16F50ADA20C14539005356D9 /* setofont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = setofont.ttf; sourceTree = "<group>"; };
 		16F50ADB20C14539005356D9 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		16F50ADC20C14539005356D9 /* setofont-ex.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "setofont-ex.ttf"; sourceTree = "<group>"; };
+		A24D14859ECDD64809E6A2C1 /* Pods-butterflyFoodplants.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-butterflyFoodplants.debug.xcconfig"; path = "Pods/Target Support Files/Pods-butterflyFoodplants/Pods-butterflyFoodplants.debug.xcconfig"; sourceTree = "<group>"; };
+		BAD552DA2C481A99910C64A5 /* Pods-butterflyFoodplants.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-butterflyFoodplants.release.xcconfig"; path = "Pods/Target Support Files/Pods-butterflyFoodplants/Pods-butterflyFoodplants.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95E2138615993CF2D6E7DBF /* Pods_butterflyFoodplants.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 				1645C9112098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift */,
 				160E811720C036DE00AD293B /* butterflyFoodplantsTableViewController.swift */,
 				1645C9152098C90100E54F19 /* butterflyPlantsDetailViewController.swift */,
+				166B4F6020E2C17200CB6C48 /* mapViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,6 +105,8 @@
 				1645C90D20987FDD00E54F19 /* butterflyFoodplantsTableViewCell.swift */,
 				160E811B20C03A7800AD293B /* butterflyFoodplantsDetailHeaderView.swift */,
 				1649A12920C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift */,
+				166B4F5A20E2A51000CB6C48 /* butterflyDetailSeparatorCell.swift */,
+				166B4F5C20E2A56C00CB6C48 /* butterflyDetailMapCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				160E810F20BFD28200AD293B /* butterflyFoodplants.swift */,
+				166B4F5E20E2AB1B00CB6C48 /* location.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +134,8 @@
 			children = (
 				167D7D3820985361006E60A9 /* butterflyFoodplants */,
 				167D7D3720985361006E60A9 /* Products */,
+				B51475FF84B44D692F55B56A /* Pods */,
+				2D40D826DF83C41E329CFEE4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,7 +156,6 @@
 				160E811120BFD2C400AD293B /* Controller */,
 				160E811320BFD52C00AD293B /* Model */,
 				160E811420C0353C00AD293B /* Storyboard */,
-				167D7D4020985362006E60A9 /* Assets.xcassets */,
 				167D7D4520985362006E60A9 /* Info.plist */,
 			);
 			path = butterflyFoodplants;
@@ -146,6 +164,7 @@
 		16F50AC120C1432C005356D9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				166B4F5820E2962C00CB6C48 /* Assets.xcassets */,
 				16F50AD920C14539005356D9 /* setofont */,
 				16F50AC220C14341005356D9 /* Fonts */,
 			);
@@ -180,6 +199,23 @@
 			path = setofont;
 			sourceTree = "<group>";
 		};
+		2D40D826DF83C41E329CFEE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00959DF082050CB6BC600C6A /* Pods_butterflyFoodplants.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B51475FF84B44D692F55B56A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A24D14859ECDD64809E6A2C1 /* Pods-butterflyFoodplants.debug.xcconfig */,
+				BAD552DA2C481A99910C64A5 /* Pods-butterflyFoodplants.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 167D7D4820985362006E60A9 /* Build configuration list for PBXNativeTarget "butterflyFoodplants" */;
 			buildPhases = (
+				A10C7104F9ADB748097B99F8 /* [CP] Check Pods Manifest.lock */,
 				167D7D3220985361006E60A9 /* Sources */,
 				167D7D3320985361006E60A9 /* Frameworks */,
 				167D7D3420985361006E60A9 /* Resources */,
+				4685CFA8BCEA9B5FBADA9CAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,10 +282,10 @@
 				16F50AD220C14342005356D9 /* RobotoMono-ThinItalic.ttf in Resources */,
 				16F50ACF20C14342005356D9 /* RobotoMono-Regular.ttf in Resources */,
 				16F50AD820C14342005356D9 /* RobotoMono-Thin.ttf in Resources */,
+				166B4F5920E2962C00CB6C48 /* Assets.xcassets in Resources */,
 				16F50ADE20C1453A005356D9 /* readme.txt in Resources */,
 				16F50ADD20C1453A005356D9 /* setofont.ttf in Resources */,
 				16F50ACE20C14342005356D9 /* RobotoMono-Medium.ttf in Resources */,
-				167D7D4120985362006E60A9 /* Assets.xcassets in Resources */,
 				167D7D3F20985361006E60A9 /* Main.storyboard in Resources */,
 				16F50AD320C14342005356D9 /* RobotoMono-Light.ttf in Resources */,
 				16F50ADF20C1453A005356D9 /* setofont-ex.ttf in Resources */,
@@ -260,6 +298,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4685CFA8BCEA9B5FBADA9CAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-butterflyFoodplants/Pods-butterflyFoodplants-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-butterflyFoodplants/Pods-butterflyFoodplants-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A10C7104F9ADB748097B99F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-butterflyFoodplants-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		167D7D3220985361006E60A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,10 +346,14 @@
 			files = (
 				1645C90E20987FDD00E54F19 /* butterflyFoodplantsTableViewCell.swift in Sources */,
 				1649A12A20C04FA500EB6951 /* butterflyFoodplantDetailTextCell.swift in Sources */,
+				166B4F5B20E2A51000CB6C48 /* butterflyDetailSeparatorCell.swift in Sources */,
+				166B4F6120E2C17200CB6C48 /* mapViewController.swift in Sources */,
+				166B4F5F20E2AB1B00CB6C48 /* location.swift in Sources */,
 				160E811020BFD28200AD293B /* butterflyFoodplants.swift in Sources */,
 				1645C9162098C90100E54F19 /* butterflyPlantsDetailViewController.swift in Sources */,
 				1645C9122098938F00E54F19 /* butterflyFoodplantsTypesTableViewController.swift in Sources */,
 				160E811C20C03A7800AD293B /* butterflyFoodplantsDetailHeaderView.swift in Sources */,
+				166B4F5D20E2A56C00CB6C48 /* butterflyDetailMapCell.swift in Sources */,
 				167D7D3A20985361006E60A9 /* AppDelegate.swift in Sources */,
 				160E811820C036DE00AD293B /* butterflyFoodplantsTableViewController.swift in Sources */,
 			);
@@ -414,6 +497,7 @@
 		};
 		167D7D4920985362006E60A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24D14859ECDD64809E6A2C1 /* Pods-butterflyFoodplants.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -432,6 +516,7 @@
 		};
 		167D7D4A20985362006E60A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD552DA2C481A99910C64A5 /* Pods-butterflyFoodplants.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

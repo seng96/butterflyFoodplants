@@ -10,11 +10,14 @@ import UIKit
 import WebKit
 
 class butterflyPlantsDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+    
+    var butterflyFoodplant = ButterflyFoodplant()
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -23,18 +26,21 @@ class butterflyPlantsDetailViewController: UIViewController, UITableViewDataSour
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: butterflyFoodplantDetailTextCell.self), for: indexPath) as! butterflyFoodplantDetailTextCell
             cell.descriptionLabel.text = butterflyFoodplant.description
             return cell
-            
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: butterflyDetailSeparatorCell.self), for: indexPath) as! butterflyDetailSeparatorCell
+            cell.titleLabel.text = "How To Get Here"
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: butterflyDetailMapCell.self), for: indexPath) as! butterflyDetailMapCell
+            cell.configure(location: cell.getData(btfName: butterflyFoodplant.name))
+            return cell
         default:
             fatalError("Failed to instantiate the table view cell")
         }
     }
     
-    
-    
-    
-    var butterflyFoodplant: ButterflyFoodplant = ButterflyFoodplant()
     @IBOutlet var headerViewer: butterflyFoodplantsDetailHeaderView!    
-    
+    @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.largeTitleDisplayMode = .never
@@ -48,6 +54,12 @@ class butterflyPlantsDetailViewController: UIViewController, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap" {
+            let destinationController = segue.destination as! mapViewController
+            destinationController.butterflyFoodplant = butterflyFoodplant
+        }
+    }
 
     /*
     // MARK: - Navigation
